@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 	<head>
 		<title>P5.js Example</title>
@@ -20,7 +20,7 @@
 			function setup(){
 			    var dW=displayWidth; var dH=displayHeight
 				
-				dW=0.8*dW;dH=0.6*dH
+				dW=dW;dH=0.6*dH
 				height=dH;width=dW;
 				var canvas = createCanvas(dW, dH);
                 canvas.parent('sketch-div');
@@ -72,6 +72,9 @@
        var inputVal = document.getElementById("mysamples");
        inputVal.style.backgroundColor = "yellow";  
        document.getElementById("buttComputeDFT").style.backgroundColor='OrangeRed';
+	   document.getElementById("mysamples").value ="0,50,86.6,100,86.6,50,0,-50,-86.6,-100,-86.6,-50"
+	   myDFT();
+	
 	  //document.getElementById("adjust").style.backgroundColor='yellow';
    }// End of function mySetColor()
    
